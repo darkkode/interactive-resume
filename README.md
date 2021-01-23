@@ -1,1 +1,1 @@
-Yet another portfolio website, built as a Mario game.
+Yet another resume built as a Mario game.
