@@ -2241,7 +2241,8 @@ img {
     left: 85%
 }
 
-#social-middle {
+
+/* #social-middle {
     position: relative;
     left: 20px;
     width: 70px;
@@ -2249,7 +2250,7 @@ img {
     padding-left: 10px;
     padding-bottom: 10px;
     background-color: #ed1c24
-}
+} */
 
 #social-top {
     position: relative;
@@ -2391,14 +2392,6 @@ img {
     background-image: url(../images/image-title-experience.png)
 }
 
-#title-leonardi {
-    left: 200px;
-    bottom: 0;
-    width: 880px;
-    height: 300px;
-    background-image: url(../images/image-title-leonardi.png)
-}
-
 #title-publication,
 #title-robby {
     position: absolute;
@@ -2407,14 +2400,6 @@ img {
     width: 1180px;
     height: 300px;
     background-image: url(../images/image-title-publication.png)
-}
-
-#title-robby {
-    left: 0;
-    bottom: 0;
-    width: 840px;
-    height: 420px;
-    background-image: url(../images/image-title-robby.png)
 }
 
 #title-skills {
