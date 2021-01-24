@@ -613,7 +613,7 @@ var canAnimateBuildingInformation, buildingLegsTimer, buildingBlinkTimer, animat
     isFishStillAnimating = !1,
     fishAnimateNumber = 0,
     numberOfFishInEachRowArray = new Array;
-numberOfFishInEachRowArray.push(5, 5, 3, 4);
+numberOfFishInEachRowArray.push(5, 5, 4, 4, 3);
 var canAnimateCrabInformation, skill2ContainerDiv = document.getElementById("skill-2-container"),
     crabArray = new Array,
     crabEyeArray = new Array,
