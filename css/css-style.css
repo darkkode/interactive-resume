@@ -2383,8 +2383,7 @@ img {
     background-image: url(../images/image-title-contact.png)
 }
 
-#title-experience,
-#title-leonardi {
+#title-experience {
     position: absolute;
     left: 13500px;
     bottom: 20%;

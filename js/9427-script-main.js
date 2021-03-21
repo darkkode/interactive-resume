@@ -261,8 +261,15 @@ function stopAllNbaAnimation() {
 }
 
 function positionSeaAnimals(e, t, i, n) {
-    for (var a = e, o = t, r = i, l = n, s = 0, c = 0; c < o.length; c++)
-        for (var f = 0; f < o[c]; f++) a[s].style.left = seaAnimalSwimDistance + f * r + "px", a[s].style.top = c * l + "px", s += 1
+    for (var a = e, o = t, r = i, l = n, s = 0, c = 0; c < o.length; c++) {
+        for (var f = 0; f < o[c]; f++) {
+            try {
+                a[s].style.left = seaAnimalSwimDistance + f * r + "px", a[s].style.top = c * l + "px", s += 1
+            } catch (err) {
+                console.log("Things went wrong here", e, t, s);
+            }
+        }
+    }
 }
 
 function animateSeaAnimals(e) {
@@ -627,7 +634,7 @@ var canAnimateTurtleInformation, skill3ContainerDiv = document.getElementById("s
     isTurtleStillAnimating = !1,
     turtleAnimateNumber = 0,
     numberOfTurtleInEachRowArray = new Array;
-numberOfTurtleInEachRowArray.push(4, 2, 3, 2);
+numberOfTurtleInEachRowArray.push(4, 5, 4, 5);
 var isRobbyJumping, isRobbyFalling, swimUpHeight, layersMovement, robbyRightEdge, robbyLeftEdge, robbyMaxHorizontalDistance, canAnimateRobbyRunSwim, robbyStartFrame, robbyStopFrame, shiftRobbyFrameTimer, pageVerticalPositionWhenAnimateRobby1, pageVerticalPositionWhenAnimateRobby2, canAnimateNbaInformation, nbaBoardsCounter, nbaBoardsAnimationTimer, nbaPlayerCounter, nbaPlayerTimer, blinkNbaPlayerTimer, canAnimateSocialContainer, happyRobbyTimer, scrollOrSwipeTextContainerTimer, waterfallTimer, drawFireworkTimer, fireworkCenterX, fireworkCenterY, fireworkOneRadiusDistance, fireworkOneRotationAngle, drawOneLayerOfFireworkTimer, pageVerticalPosition = 0,
     pageVerticalPositionOnTouch = 0,
     previousPageVerticalPosition = 0,
